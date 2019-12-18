@@ -51,7 +51,7 @@ load('testimage.mat') %The test image is the first acquisition of a 361 High
 %                       page: http://bigwww.epfl.ch/smlm/datasets/index.html
 
 %% Constrained Biconvex algorithm
-%[xCoBic, ~] = CoBic( testimage/max(testimage(:)),matriceConv, paramsResol);  
+[xCoBic, ~] = CoBic( testimage/max(testimage(:)),matriceConv, paramsResol);  
 xCoBic= xCoBic*max(testimage(:));
 %% Penalized Biconvex algorithm
 [xPeBic, ~] = PeBic( testimage/max(testimage(:)),matriceConv, paramsResol);  
